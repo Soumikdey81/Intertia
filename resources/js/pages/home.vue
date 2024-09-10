@@ -8,20 +8,19 @@
         </li>
     </ul>
 
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/users">Users</a></li>
-            <li><a href="/settings">Settings</a></li>
-        </ul>
-    </nav>
+    <nav-component />
 </template>
 
 <script>
+import nav from "../shared/nav.vue";
+
 export default {
     props: {
         name: String,
         frameworks: Array,
+    },
+    components: {
+        "nav-component": nav,
     },
 };
 </script>

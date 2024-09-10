@@ -5,7 +5,7 @@ use Inertia\Inertia;
 
 Route::get('/', function () {
     return Inertia::render('home', [
-        "name"=> "soumik Dey",
+        "name"=> "Soumik Dey",
         "frameworks" => [
             'Laravel', 'Vue', 'Inertia'
         ]
